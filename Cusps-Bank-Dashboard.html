@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cusps Bank-Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main>
+      <section class="">
+        <div class="w-9/12 m-auto bg-blue-50 my-4">
+          <p class="text-center font-bold text-4xl">welcome here</p>
+          <p class="text-center font-simebold text-2xl">Deposit and Withdraw</p>
+        </div>
+        <div class="grid grid-cols-3 gap-4 w-9/12 m-auto">
+          <div class="grid-item bg-blue-500 rounded-md p-5">
+            <p class="text-white font-medium text-2xl">Deposit</p>
+            <p class="text-white font-medium text-2xl my-2">
+              $ <span id="deposit"> 00</span>
+            </p>
+          </div>
+          <div class="grid-item bg-yellow-500 rounded-md p-5">
+            <p class="text-white font-medium text-2xl">Withdraw</p>
+            <p class="text-white font-medium text-2xl my-2">
+              $<span id="withdraw"> 00</span>
+            </p>
+          </div>
+          <div class="grid-item bg-green-700 rounded-md p-5">
+            <p class="text-white font-medium text-2xl">Balance</p>
+            <p class="text-white font-medium text-2xl my-2">
+              $<span id="balance"> 1200</span>
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 w-9/12 m-auto my-4">
+          <div class="bg-orange-400 rounded-md p-5">
+            <p class="text-white font-medium text-3xl my-2">
+              Your Deposit Amount
+            </p>
+            <div class="px-10 my-5">
+              <input
+                id="deposit-amount"
+                class="rounded w-10/12 p-1 block"
+                placeholder="$ Amount you want to deposit"
+              />
+              <button
+                class="bg-orange-700 font-medium text-white rounded text-lg px-5 py-2 my-3"
+              >
+                Deposit
+              </button>
+            </div>
+          </div>
+          <div class="bg-violet-400 rounded-md p-5">
+            <p class="text-white font-medium text-3xl my-2">Your Withdraw</p>
+            <div class="px-10 my-5">
+              <input
+                id="withdraw-amount"
+                class="rounded w-10/12 p-1"
+                placeholder="$ Amount you want to withdraw"
+              />
+              <button
+                class="bg-violet-700 font-medium text-white rounded text-lg px-5 py-2 my-3"
+              >
+                Withdraw
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
